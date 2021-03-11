@@ -177,7 +177,7 @@ class _RegitFState extends State<RegitF>{
                     } else
                     if(fName != null || lName !=null ||password!=null  ){
                       print("Inserted");
-                      DataBase.db.insertData(email: email,password: password,dob: selectedDate.toString(),gender: gender,context: context);
+                      DataBase.db.insertData(fName:fName,lName:lName,email: email,password: password,dob: selectedDate.toString(),gender: gender,context: context);
                       Navigator.pushReplacementNamed(context, "/dashB");
                     }
                     else{
